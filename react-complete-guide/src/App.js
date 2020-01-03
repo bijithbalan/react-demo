@@ -39,7 +39,7 @@ class App extends Component {
 
 export default App;
 
-/* React Hooks */
+/* Functional Component and React Hooks */
 // import React, { useState } from 'react';
 // import './App.css';
 // import Person from './Person/Person';
