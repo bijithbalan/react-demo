@@ -1,12 +1,13 @@
-Import React, React DOM and Babel.
-React -> React development
-React DOM -> For component rendering
-Babel -> Develop in latest JS code and ship it to Browser for Browser compatible code
+Import React, React DOM and Babel.<br />
+react -> React development<br />
+react-dom -> For component rendering<br />
+babel -> Develop in latest JS code and ship it to Browser for Browser compatible code
 
-New JS:
-let & const
-Arrow functions
+New JS:<br />
+let & const<br />
+Arrow functions<br />
 Exports and Imports modules:
+```
     {
         const person = {
             name: 'Some Name'
@@ -15,7 +16,9 @@ Exports and Imports modules:
 
         export const clean = () => { ... } --> import { clean } from './utility.js' OR import { clean as cln } from './utility.js' OR import * as bundled from './utility.js'
     }
+```
 Class:
+```
     class Man {
         constructor() {
             this.gender = "male";
@@ -36,13 +39,12 @@ Class:
     }
     const person = new Person();
     person.printGender(); // "Male"
-Spread and Rest operators
-    Helps to copy an array/object. const secondPerson = { ...person };
-Destructuring operator:
+```
+Spread and Rest operators<br />
+    Helps to copy an array/object. const secondPerson = { ...person };<br />
+Destructuring operator:<br />
     { name } = { name: "Test", filed: "Area"}
 
-Start React Project:
-npm install create-react-app -g
+Start React Project:<br />
+npm install create-react-app -g<br />
 create-react-app react-complete-guide
-
-Now -> Code
