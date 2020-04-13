@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Radium from 'radium';
 import Person from './Person/Person';
 
 class App extends Component {
@@ -37,8 +38,12 @@ class App extends Component {
       backgroundColor: 'white',
       font: 'inherit',
       border: '1px solid blue',
-      padding: '8px'
+      padding: '8px',
+      ':hover': {
+        pointer: 'cursor'
+      }
     }
+    // styles can be changed dynamically based on conditions because this is a js object
     return (
       <div className="App">
         <h1 style={styles} >I am a React App</h1>
@@ -54,10 +59,12 @@ class App extends Component {
     // min 3 elements, max infinite elements
     // null is for configuration
     // .bind() is more efficient
+    // className can also be a js object {} and set based on conditions
+    // radium is used to write pseudo selectors and media queries in styles
   }
 }
 
-export default App;
+export default Radium(App);
 
 /* Functional Component and React Hooks */
 // import React, { useState } from 'react';
